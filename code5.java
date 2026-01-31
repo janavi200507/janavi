@@ -1,16 +1,20 @@
-public class code5{
-    public static int add(int a,int b){
-        return a+b;
+abstract class Shape{
+    abstract void draw();
+    void message(){
+        System.out.println("hello");
 
     }
-    public static int add(int a,int b,int c){
-        return a+b+c;
-
-    }
-
-public static void main (String[] args){
-    System.out.println(add(10,20));
-    System.out.println(add(10,20,30));
-
 }
+class Circle extends Shape{
+    void draw(){
+        System.out.println("long");
+
+    }
+}
+public class code5{
+    public static void main(String[] args){
+        Circle cl=new Circle();
+        cl.draw();
+        cl.message();
+    }
 }

@@ -1,10 +1,18 @@
-public class code2{
-    public static int add(int x,int y){
-        int ans = x+y;
-        return ans;
+class Animal{
+    void Sound(){
+        System.out.println("hello");
+
+        }
     }
-    static void main(String[] args){
-        int res = add (20,30);
-        System.out.println(res);
+class Dog extends Animal{
+    @Override
+    void Sound(){
+        System.out.println("hi");
+    }
+}
+public class code2{
+    public static void main(String[] args){
+        Dog dg=new Dog();
+        dg.Sound();
     }
 }

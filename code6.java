@@ -1,16 +1,25 @@
-public class code6{
-    public static double add(double a,double b){
-    return a+b;
-    }
-    public static int add(int a,int b){
-        return a+b;
-    }
-     
-public static void main(String[] args){
-    double res=add(10,20);
-    int res1=add(10,20);
-    System.out.println(res);
-    System.out.println(res1);
+class Animal{
+    Animal(){
+        System.out.println("hello");
+    
 
+    }
+    void run(){
+    System.out.println("run");
+    }
 }
+    class Dog extends Animal{
+        Dog(){
+        super();
+        }
+        void Sound(){
+            System.out.println("hi");
+            super.run();
+        }
+     }
+public class code6{
+    public static void main(String[] args){
+        Dog dg=new Dog();
+        dg.Sound();
+    }
 }

@@ -1,8 +1,20 @@
-public class code3{
-    public static void print(){
-        System.out.println("alice");
+class Animal{
+    void Sound(){
+        System.out.println("hello");
+
+        }
     }
+    class Dog extends Animal{
+        Dog(){
+        super();
+        }
+        void Sound(){
+            System.out.println("hi");
+        }
+     }
+public class code3{
     public static void main(String[] args){
-        print();
+        Dog dg=new Dog();
+        dg.Sound();
     }
 }

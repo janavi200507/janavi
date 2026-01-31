@@ -1,13 +1,17 @@
-class Car{
-    String color;
-    void run(){
-        System.out.println("Str");
+interface payment{
+    void pay();
+
+}
+class upi implements payment{
+    public void pay(){
+        System.out.println("paying");
+
     }
 }
 public class code7{
-        public static void main(String[] args){
-            Car RR= new Car();
-            RR.color="White";
-            RR.run();
-        }
+    public static void main(String[] args){
+        upi gpay=new upi();
+        gpay.pay();
+        
     }
+}
