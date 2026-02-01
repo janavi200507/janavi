@@ -1,18 +1,29 @@
-class Animal{
-void sound(){
-    System.out.println("hello");
-}
-}
-class Dog extends Animal{
-    void Bark(){
-        System.out.println("dog");
 
+    class Student {
+    String name;
+    int age;
+    int marks;
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Marks: " + marks);
+        System.out.println();
     }
 }
-public class code1 {
-    public static void main(String[] args){
-        Dog dg=new Dog();
-        dg.Bark();
-        dg.sound();
+    public class code1 {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.name = "alice";
+        s1.age = 20;
+        s1.marks = 85;
+
+        Student s2 = new Student();
+        s2.name = "bob";
+        s2.age = 19;
+        s2.marks = 90;
+
+        s1.display();
+        s2.display();
     }
 }
+
